@@ -36,12 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-header {
-  background: #282c34;
-  padding: 1rem;
-}
-header a {
-  font-size: 1rem;
-  color: #ffff;
-}
