@@ -32,9 +32,9 @@ app.use('/api/upload', uploadRoute);
 //     res.send(data.products);
 // });
 const __dirname = Path.resolve();
-app.use(express.static(Path.join(__dirname, '/frontend-app/build')));
+app.use(express.static(Path.join(__dirname, 'amazon/frontend-app/build')));
 app.get('*', (req, res) =>
-    res.sendFile(Path.join(__dirname, '/frontend-app/build/index.html'))
+    res.sendFile(Path.join(__dirname, 'amazon/frontend-app/build/index.html'))
 );
 //get user address using google api
 app.get('/api/keys/google', (req, res) => {
