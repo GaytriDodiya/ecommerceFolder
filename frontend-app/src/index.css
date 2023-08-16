@@ -31,17 +31,18 @@ header > a {
 main {
   flex: 1;
 }
-.btn-primary {
+.btn-primary,
+.btn-outline-primary {
   background-color: #f0c040;
   color: #000000;
 }
 .site-container {
   min-height: 100vh;
 }
-.product {
+/* .product {
   border: solid 1px #404040;
   margin: 1rem;
-}
+} */
 .rating span {
   color: #ffc000;
 }
@@ -73,4 +74,92 @@ main {
 .SpinnerContainer {
   display: flex;
   justify-content: center;
+}
+/* side bar */
+.navbar-brand {
+  font-weight: bold;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+/* .navbar-brand {
+  font-weight: bold;
+}
+.side-nav {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100900;
+  transition: 0.5s;
+}
+.site-container {
+  -o-transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+
+.active-nav {
+  left: 0;
+} */
+.text-bold {
+  font-weight: bold;
+}
+.text-end {
+  text-align: right;
+}
+/* Map */
+
+.full-box {
+  height: 100vh;
+  max-width: initial;
+}
+.full-box header,
+.full-box footer {
+  display: none;
+}
+.full-box .container {
+  height: 100vh;
+  max-width: initial;
+  margin: 0;
+  padding: 0;
+}
+
+.full-box .mt-3 {
+  margin-top: 0 !important;
+}
+
+.map-input-box {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0.5rem auto;
+  width: 25rem;
+  height: 3rem;
+  display: flex;
+}
+.map-input-box input {
+  border-radius: 1rem 0 0 1rem;
+  border-right: 0;
+}
+.map-input-box button {
+  border-radius: 0 1rem 1rem 0;
+  border-left: 0;
 }

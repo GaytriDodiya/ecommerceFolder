@@ -19,7 +19,7 @@ const data = {
             // _id: '1',
             name: 'Nike Slim shirt',
             slug: 'nike-slim-shirt',
-            category: 'shirts',
+            category: 'Shirts',
             image: '/images/p1.jpg',
             price: 1120,
             countInStock: 10,
@@ -28,6 +28,7 @@ const data = {
             numReviews: 10,
             description: 'high quality shirt',
         },
+
         {
             // _id: '2',
             name: 'Adidas Fit Shirt',

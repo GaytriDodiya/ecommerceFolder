@@ -126,7 +126,7 @@ export default function PlaceOrderScreen() {
                                             <Col md={3}>
                                                 <span>{item.quantity}</span>
                                             </Col>
-                                            <Col md={3}>${item.price}</Col>
+                                            <Col md={3}>&#8377;{item.price}</Col>
                                         </Row>
                                     </ListGroup.Item>
                                 ))}

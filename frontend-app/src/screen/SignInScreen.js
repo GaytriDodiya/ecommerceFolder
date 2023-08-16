@@ -30,9 +30,6 @@ export default function SigninScreen() {
             ctxDispatch({ type: 'USER_SIGNIN', payload: data });
             localStorage.setItem('userInfo', JSON.stringify(data));
             navigate(redirect || '/');
-            // ctxDispatch({ type: 'USER_SIGNIN', payload: data });
-            // localStorage.setItem('userInfo', JSON.stringify(data));
-            // navigate(redirect || '/');
         } catch (err) {
             toast.error(getError(err));
             // alert("invalid email and password");
@@ -65,6 +62,9 @@ export default function SigninScreen() {
                 <div className="mb-3">
                     New customer?{' '}
                     <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
+                </div>
+                <div className="mb-3">
+                    Forget Password? <Link to={`/forget-password`}>Reset Password</Link>
                 </div>
             </Form>
         </Container>
